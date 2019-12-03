@@ -44,10 +44,10 @@
         <p><span class="red">協調性 </span>,<span class="orange">外向性 </span>,<span class="yellow">開放性 </span>,<span class="green">誠実性 </span>,<span class="blue">神経症的傾向</span>の5つです</p>
 
         <h1>各要素の概要</h1>
-        <p class="element">協調性：新しいものに対する興味や好奇心</p>
-        <p class="element">外向性：物事をコツコツと真面目に続ける力</p>
-        <p class="element">開放性：初対面の人とどれぐらい社交的に接することができるか</p>
-        <p class="element">誠実性：周りに合わせる力</p>
+        <p class="element">協調性：周りに合わせる力</p>
+        <p class="element">外向性：初対面の人とどれぐらい社交的に接することができるか</p>
+        <p class="element">開放性：新しいものに対する興味や好奇心</p>
+        <p class="element">誠実性：物事をコツコツと真面目に続ける力</p>
         <p class="element">神経症的傾向：不安や緊張をどれくらいしやすいか</p>
         <h1>テストの始め方</h1>
         <p>右の入力フォームにニックネームとemailアドレスを入力して始めるボタンをクリック！！</p>

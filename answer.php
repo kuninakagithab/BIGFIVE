@@ -1,6 +1,7 @@
 <?php
-// ニックネームの取得
+// ニックネームとemailの取得
 $nickname = $_POST['nickname'];
+$email = $_POST['email'];
 // 変数定義と各チェックボックスのvalue取得
 $check1 = $_POST['check1'];
 $check2 = $_POST['check2'];
@@ -68,7 +69,7 @@ $psychotic = $check5 + $check10;
     <main>
       <section>
         <h2>各要素の点数は ８点満点 です</h2>
-        <p><?php echo $nickname; ?></p>
+        <p>それでは、<span class="name"><?php echo $nickname; ?></span>さんの結果をみてみましょう</p>
       </section>
       <section>
         <div class="result">
@@ -142,8 +143,20 @@ $psychotic = $check5 + $check10;
 
       <h3>終わりに</h3>
       <p>いかがだったでしょうか。。。</p>
-      <p>このテストで出た結果を生かして、自分の生活に生かしてみてください</p>
-      <p></p>
+      <p>このテストで出た結果を生かして、自分の生活に生かしてみてください!!</p>
+      <p>入力された内容については送信されていません。</p>
+      <p>送信したくなければ、下のボタンは押さずにページを閉じてください。</p>
+      <p>お疲れ様でした。。。</p>
+      <form action="thanks.php" method="POST">
+        <input type="hidden" name="name1" value="<?= $nickname?>">
+        <input type="hidden" name="name2" value="<?= $email?>">
+        <input type="hidden" name="name3" value="<?= $cooperativeness?> ">
+        <input type="hidden" name="name4" value="<?= $extroversion?>">
+        <input type="hidden" name="name5" value="<?= $openness?>">
+        <input type="hidden" name="name6" value="<?= $sincerity?>">
+        <input type="hidden" name="name7" value="<?= $psychotic?>">
+        <input type="submit" class="btn"  value="送信する">
+      </form>
     </main>
   </div>
 

@@ -52,7 +52,8 @@ if ($nickname == '' || $email == '') {
       <p>それでは質問に参りましょう！！</p>
     </div>
     <form action="answer.php" method="POST">
-      <input type="hidden" name="nickname" value="<?php $nickname ?>">
+      <input type="hidden" name="nickname" value="<?= $nickname ?>">
+      <input type="hidden" name="email" value="<?= $email ?>">
       <div class="checkbox">
         <h2>1. 初対面の人に会うのが好きで、<br>初対面でも相手との会話を楽しむことができる</h2>
         <p><input type="radio" name="check1" value="0" checked="checked">0.全く当てはまらない</p>
@@ -95,43 +96,43 @@ if ($nickname == '' || $email == '') {
       </div>
       <div class="checkbox">
         <h2>6. 恥ずかしがり屋で物静かなタイプ</h2>
-        <p><input type="radio" name="check6" value="0" checked="checked">0.全く当てはまらない</p>
-        <p><input type="radio" name="check6" value="1">1.ほとんど当てはまらない</p>
+        <p><input type="radio" name="check6" value="4" checked="checked">0.全く当てはまらない</p>
+        <p><input type="radio" name="check6" value="3">1.ほとんど当てはまらない</p>
         <p><input type="radio" name="check6" value="2">2.どちらとも言えない</p>
-        <p><input type="radio" name="check6" value="3">3.やや当てはまる</p>
-        <p><input type="radio" name="check6" value="4">4.完全に当てはまる</p>
+        <p><input type="radio" name="check6" value="1">3.やや当てはまる</p>
+        <p><input type="radio" name="check6" value="0">4.完全に当てはまる</p>
       </div>
       <div class="checkbox">
         <h2>7. 思ったことをすぐに口に出し、他人の感情に流されず冷静な判断をする</h2>
-        <p><input type="radio" name="check7" value="0" checked="checked">0.全く当てはまらない</p>
-        <p><input type="radio" name="check7" value="1">1.ほとんど当てはまらない</p>
+        <p><input type="radio" name="check7" value="4" checked="checked">0.全く当てはまらない</p>
+        <p><input type="radio" name="check7" value="3">1.ほとんど当てはまらない</p>
         <p><input type="radio" name="check7" value="2">2.どちらとも言えない</p>
-        <p><input type="radio" name="check7" value="3">3.やや当てはまる</p>
-        <p><input type="radio" name="check7" value="4">4.完全に当てはまる</p>
+        <p><input type="radio" name="check7" value="1">3.やや当てはまる</p>
+        <p><input type="radio" name="check7" value="0">4.完全に当てはまる</p>
       </div>
       <div class="checkbox">
         <h2>8. 後先考えずに行動して、ぎりぎりまで物事に手をつけない衝動的な部分がある</h2>
-        <p><input type="radio" name="check8" value="0" checked="checked">0.全く当てはまらない</p>
-        <p><input type="radio" name="check8" value="1">1.ほとんど当てはまらない</p>
+        <p><input type="radio" name="check8" value="4" checked="checked">0.全く当てはまらない</p>
+        <p><input type="radio" name="check8" value="3">1.ほとんど当てはまらない</p>
         <p><input type="radio" name="check8" value="2">2.どちらとも言えない</p>
-        <p><input type="radio" name="check8" value="3">3.やや当てはまる</p>
-        <p><input type="radio" name="check8" value="4">4.完全に当てはまる</p>
+        <p><input type="radio" name="check8" value="1">3.やや当てはまる</p>
+        <p><input type="radio" name="check8" value="0">4.完全に当てはまる</p>
       </div>
       <div class="checkbox">
         <h2>9. 大抵リラックスして落ち着いている</h2>
-        <p><input type="radio" name="check9" value="0" checked="checked">0.全く当てはまらない</p>
-        <p><input type="radio" name="check9" value="1">1.ほとんど当てはまらない</p>
+        <p><input type="radio" name="check9" value="4" checked="checked">0.全く当てはまらない</p>
+        <p><input type="radio" name="check9" value="3">1.ほとんど当てはまらない</p>
         <p><input type="radio" name="check9" value="2">2.どちらとも言えない</p>
-        <p><input type="radio" name="check9" value="3">3.やや当てはまる</p>
-        <p><input type="radio" name="check9" value="4">4.完全に当てはまる</p>
+        <p><input type="radio" name="check9" value="1">3.やや当てはまる</p>
+        <p><input type="radio" name="check9" value="0">4.完全に当てはまる</p>
       </div>
       <div class="checkbox">
         <h2>10. 物事を現実的に考え、常識破りなことはしない、<br>わりと保守的な考え方である</h2>
-        <p><input type="radio" name="check10" value="0" checked="checked">0.全く当てはまらない</p>
-        <p><input type="radio" name="check10" value="1">1.ほとんど当てはまらない</p>
+        <p><input type="radio" name="check10" value="4" checked="checked">0.全く当てはまらない</p>
+        <p><input type="radio" name="check10" value="3">1.ほとんど当てはまらない</p>
         <p><input type="radio" name="check10" value="2">2.どちらとも言えない</p>
-        <p><input type="radio" name="check10" value="3">3.やや当てはまる</p>
-        <p><input type="radio" name="check10" value="4">4.完全に当てはまる</p>
+        <p><input type="radio" name="check10" value="1">3.やや当てはまる</p>
+        <p><input type="radio" name="check10" value="0">4.完全に当てはまる</p>
       </div>
       <div class="subbtnbox">
         <input class="subbtn" type="submit" value="結果を見る">

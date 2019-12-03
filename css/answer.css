@@ -14,6 +14,10 @@ section{
   margin-bottom: 50px;
 }
 
+.name{
+  color: rgb(72, 191, 48);
+}
+
 .result{
   display: flex;
   align-items: center;
@@ -49,4 +53,12 @@ h3{
   font-size: 25px;
   background-color: rgb(230, 230, 230);
   border-bottom: 2px solid rgb(255, 69, 69);
+}
+
+.btn{
+  width: 300px;
+  font-size: 25px;
+  background-color: greenyellow;
+  text-align: center;
+  margin: 0 auto;
 }
