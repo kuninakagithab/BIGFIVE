@@ -5,7 +5,7 @@
 $host = getenv('hostname'); //MySQLがインストールされてるコンピュータ
 $dbname = getenv('DBname'); //使用するDB
 $charset = 'utf8'; //文字コード
-$user = getenv('root'); //MySQLにログインするユーザー名
+$user = getenv('username'); //MySQLにログインするユーザー名
 $password= getenv('password');//ユーザーのパスワード
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, //SQLでエラーが表示された場合、画面にエラーが出力される
