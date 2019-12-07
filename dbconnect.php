@@ -1,12 +1,12 @@
 <?php
 // 使うときはテンプレで使うことが多い
-
+// gerenv('キーの値')；
 //DBに接続するコード
-$host = "localhost"; //MySQLがインストールされてるコンピュータ
-$dbname = "BIGFIVE"; //使用するDB
-$charset = "utf8"; //文字コード
+$host = getenv('hostname'); //MySQLがインストールされてるコンピュータ
+$dbname = getenv('DBname'); //使用するDB
+$charset = getenv('username'); //文字コード
 $user = 'root'; //MySQLにログインするユーザー名
-$password='';//ユーザーのパスワード
+$password= getenv('password');//ユーザーのパスワード
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, //SQLでエラーが表示された場合、画面にエラーが出力される
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, //DBから取得したデータを連想配列の形式で取得する
