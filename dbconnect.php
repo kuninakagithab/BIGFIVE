@@ -4,8 +4,8 @@
 //DBに接続するコード
 $host = getenv('hostname'); //MySQLがインストールされてるコンピュータ
 $dbname = getenv('DBname'); //使用するDB
-$charset = getenv('utf8'); //文字コード
-$user = 'root'; //MySQLにログインするユーザー名
+$charset = 'utf8'; //文字コード
+$user = getenv('root'); //MySQLにログインするユーザー名
 $password= getenv('password');//ユーザーのパスワード
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION, //SQLでエラーが表示された場合、画面にエラーが出力される
@@ -16,8 +16,8 @@ $options = [
 //DBへの接続設定
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 try {
-    //DBへ接続 phpからデータベースの接続する
+    //DBへ接続
     $dbh = new PDO($dsn, $user, $password, $options);
 } catch (\PDOException $e) {
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+    throw new \PDOException($e->getMessage(), (int) $e->getCode());
 }
