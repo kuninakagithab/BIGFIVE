@@ -8,8 +8,9 @@ $extroversion = $_POST['name4'];
 $openness = $_POST['name5'];
 $sincerity = $_POST['name6'];
 $psychotic = $_POST['name7'];
+
 $stmt = $dbh->prepare('INSERT INTO bigfive ( nickname, email, cooperativeness, extroversion, openness, sincerity, psychotic) VALUES (?, ?, ?, ?, ?, ?, ?)');
-$stmt->execute([$nickname, $email,$cooperativeness,$extroversion,$openness,$sincerity,$psychotic ]);
+$stmt->execute([$nickname, $email, $cooperativeness, $extroversion, $openness, $sincerity, $psychotic]);
 ?>
 
 <!DOCTYPE html>
