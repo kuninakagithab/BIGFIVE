@@ -1,8 +1,8 @@
 <?php
 require_once('dbconnect.php');
 
-$nickname =$_POST['name1']; 
-$email =$_POST['name2']; 
+$nickname =$_POST['name1'];
+$email =$_POST['name2'];
 $cooperativeness = $_POST['name3'];
 $extroversion = $_POST['name4'];
 $openness = $_POST['name5'];
